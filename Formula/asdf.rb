@@ -28,6 +28,7 @@ class Asdf < Formula
     inreplace "#{lib}/commands/reshim.sh",
               "exec $(asdf_dir)/bin/private/asdf-exec ",
               "exec $(asdf_dir)/libexec/private/asdf-exec "
+    touch prefix/"asdf_updates_disabled"
   end
 
   test do
